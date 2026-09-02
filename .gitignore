@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Salidas pesadas y regenerables
+results/checkpoints/*.pt
+results/checkpoints/*.pth
+results/figures/*.png
+results/**/*.log
+
+# Excepción: conservar la estructura de carpetas
+!**/.gitkeep
