@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wilberforce"
+version = "1.0.0"
+description = "PINN y Q-PINN para el pendulo de Wilberforce"
+requires-python = ">=3.9"
+
+[tool.setuptools.packages.find]
+where = ["src"]
