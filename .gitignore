@@ -19,3 +19,4 @@ results/**/*.log
 
 # Excepción: conservar la estructura de carpetas
 !**/.gitkeep
+.wilberforce/
