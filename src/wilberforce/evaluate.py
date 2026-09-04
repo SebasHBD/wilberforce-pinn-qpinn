@@ -47,7 +47,9 @@ def evaluar_y_graficar_pinn(pinn, t_max_eval, semilla, etiqueta="PINN Clasica"):
     print(f"COMPARATIVA REAL vs {etiqueta.upper()} | HORIZONTE: 0 a {t_max_eval} SEGUNDOS")
     print("=" * 70)
 
-    cargar_checkpoint(pinn, t_max_eval, semilla)
+    if cargador is None:
+        cargador = cargar_checkpoint
+    cargador(pinn, t_max_eval, semilla)
 
     t_matlab, z_matlab, theta_matlab = cargar_datos_matlab()
 
@@ -100,7 +102,8 @@ def evaluar_y_graficar_pinn(pinn, t_max_eval, semilla, etiqueta="PINN Clasica"):
     plt.tight_layout()
 
     os.makedirs(ruta_figuras, exist_ok=True)
-    nombre = f"comparativa_semilla{semilla}_{t_max_eval}s.pdf"
+    prefijo = "qpinn" if "Q-PINN" in etiqueta else "pinn"
+    nombre = f"comparativa_{prefijo}_semilla{semilla}_{t_max_eval}s.pdf"
     plt.savefig(os.path.join(ruta_figuras, nombre), format="pdf", bbox_inches="tight")
     plt.close()
 

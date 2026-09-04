@@ -43,3 +43,35 @@ def cargar_checkpoint(model, tiempo_a_cargar, semilla):
     else:
         print(f"No se encontro el archivo {nombre_archivo}. La red comenzara desde cero.")
         return False
+
+def guardar_checkpoint_qpinn(model, tiempo_alcanzado, semilla):
+    """
+    Guarda el estado del Q-PINN. Al ser un nn.Module se usa state_dict().
+    """
+    nombre_archivo = f"pesos_qpinn_semilla{semilla}_t{tiempo_alcanzado}.pth"
+    ruta_completa = os.path.join(ruta_checkpoints, nombre_archivo)
+
+    checkpoint = {
+        'tiempo_alcanzado': tiempo_alcanzado,
+        'semilla': semilla,
+        'state_dict': model.state_dict()
+    }
+    torch.save(checkpoint, ruta_completa)
+    print(f"Progreso guardado: pesos estables hasta t={tiempo_alcanzado}s en {nombre_archivo}")
+
+
+def cargar_checkpoint_qpinn(model, tiempo_a_cargar, semilla):
+    """
+    Carga un checkpoint del Q-PINN para reanudar o evaluar.
+    """
+    nombre_archivo = f"pesos_qpinn_semilla{semilla}_t{tiempo_a_cargar}.pth"
+    ruta_completa = os.path.join(ruta_checkpoints, nombre_archivo)
+
+    if os.path.exists(ruta_completa):
+        checkpoint = torch.load(ruta_completa)
+        model.load_state_dict(checkpoint['state_dict'])
+        print(f"Checkpoint de t={checkpoint['tiempo_alcanzado']}s cargado con exito.")
+        return True
+    else:
+        print(f"No se encontro el archivo {nombre_archivo}. La red comenzara desde cero.")
+        return False

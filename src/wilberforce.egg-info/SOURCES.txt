@@ -2,7 +2,9 @@ README.md
 pyproject.toml
 src/wilberforce/__init__.py
 src/wilberforce/checkpoints.py
+src/wilberforce/evaluate.py
 src/wilberforce/models.py
+src/wilberforce/models_qpinn.py
 src/wilberforce/physics.py
 src/wilberforce/plots.py
 src/wilberforce.egg-info/PKG-INFO
