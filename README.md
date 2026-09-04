@@ -69,14 +69,23 @@ Error relativo en norma L2 frente a la solución numérica de referencia, sobre
 
 ## Instalación
 
-Requiere Python 3.9 o superior.
+El entorno de referencia es Python 3.13. Las versiones están fijadas en
+`requirements.txt`; usarlas es necesario para reproducir los resultados
+numéricos exactos.
+
+| Componente | Versión |
+|:---|:---|
+| Python | 3.13.15 |
+| PyTorch | 2.11.0 (CPU) |
+| PennyLane | 0.45.1 |
+| NumPy | 2.1.3 |
 
 ```bash
 git clone https://github.com/SebasHBD/wilberforce-pinn-qpinn.git
 cd wilberforce-pinn-qpinn
 
-python3 -m venv .wilberforce
-source .wilberforce/bin/activate    # Windows: .wilberforce\Scripts\activate
+python3.13 -m venv .venv
+source .venv/bin/activate    # Windows: .venv\Scripts\activate
 
 pip install -r requirements.txt
 pip install -e .
@@ -87,6 +96,7 @@ científico):
 
 ```bash
 python scripts/train_pinn.py --prueba
+python scripts/train_qpinn.py --prueba
 ```
 
 ---
@@ -111,6 +121,12 @@ for s in 1 2 3; do python scripts/train_pinn.py --semilla $s; done
 
 **Salidas.** Los checkpoints se guardan en `results/checkpoints/`, las figuras
 en `results/figures/` y las métricas en `results/metrics/` como archivos JSON.
+
+
+**Verificación de la migración.** El código de este repositorio procede de
+notebooks de Google Colab. Se comprobó que, con la semilla 1, el número de
+parámetros entrenables y el valor de la función de pérdida en la época 0
+coinciden con los del entorno original.
 
 ---
 
