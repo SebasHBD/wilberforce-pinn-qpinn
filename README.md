@@ -11,7 +11,7 @@ tradicionales, PINNs y Q-PINNs_**.
 
 Máster Universitario en Ingeniería Matemática y Computación
 Universidad Internacional de La Rioja (UNIR), septiembre de 2026
-Autor: Sebastián Quiñones Arredondo · Tutor: Dagoberto Mayorca Torres
+Autor: Sebastián Quiñones Arredondo ·
 
 ---
 
