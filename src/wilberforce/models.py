@@ -147,7 +147,7 @@ class PINN:
         list_ntk_eigvals = []
         ntk_epochs = []
 
-        lambda_ic_dinamico = 100.0
+        lambda_ic_dinamico = 10.0
 
         print("--- Iniciando Optimizacion con Adam ---")
         optimizer = torch.optim.Adam(self.params, lr=lr_adam)
@@ -178,7 +178,7 @@ class PINN:
             if epoch > 500:
                 with torch.no_grad():
                     lambda_hat_teorico = grad_phy_max / (grad_ic_mean + 1e-8)
-                    lambda_hat_seguro = torch.clamp(lambda_hat_teorico, min=1.0, max=1000.0)
+                    lambda_hat_seguro = torch.clamp(lambda_hat_teorico, min=1.0, max=200.0)
                     lambda_ic_dinamico = (1.0 - alpha_dinamico) * lambda_ic_dinamico + alpha_dinamico * lambda_hat_seguro.item()
 
             # 4. Actualizacion real de los pesos

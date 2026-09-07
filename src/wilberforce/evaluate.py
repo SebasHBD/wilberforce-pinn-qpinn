@@ -42,7 +42,7 @@ def calc_errores(real, pred, nombre_var):
     return {"mse": float(mse), "mae": float(mae), "l2_rel_pct": float(err_rel)}
 
 
-def evaluar_y_graficar_pinn(pinn, t_max_eval, semilla, etiqueta="PINN Clasica"):
+def evaluar_y_graficar_pinn(pinn, t_max_eval, semilla, etiqueta="PINN Clasica", cargador=None):
     print("\n" + "=" * 70)
     print(f"COMPARATIVA REAL vs {etiqueta.upper()} | HORIZONTE: 0 a {t_max_eval} SEGUNDOS")
     print("=" * 70)

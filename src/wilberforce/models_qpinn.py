@@ -128,7 +128,7 @@ class QPINN(nn.Module):
         list_ntk_eigvals = []
         ntk_epochs = []
 
-        lambda_ic_dinamico = 100.0
+        lambda_ic_dinamico = 10.0
 
         print("--- Iniciando Optimizacion con Adam ---")
         optimizer = torch.optim.Adam(self.parameters(), lr=lr_adam)
@@ -166,7 +166,7 @@ class QPINN(nn.Module):
             if epoch > 500:   # Warm-up
                 with torch.no_grad():
                     lambda_hat_teorico = grad_phy_max / (grad_ic_mean + 1e-8)
-                    lambda_hat_seguro = torch.clamp(lambda_hat_teorico, min=1.0, max=1000.0)
+                    lambda_hat_seguro = torch.clamp(lambda_hat_teorico, min=1.0, max=200.0)
                     lambda_ic_dinamico = (1.0 - alpha_act) * lambda_ic_dinamico + alpha_act * lambda_hat_seguro.item()
 
             # 4. Actualizacion de pesos

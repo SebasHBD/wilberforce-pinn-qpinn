@@ -1,0 +1,258 @@
+/Users/sebastianqa/dev/wilberforce-pinn-qpinn/.venv/lib/python3.13/site-packages/torch/optim/lr_scheduler.py:1694: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:837.)
+  current = float(metrics)
+K=0.99980  A=0.01764  B=0.62261
+--- Resumen de Parametros ---
+  Clasicos : 34566
+  Cuanticos: 24  (2 capas x 4 qubits x 3 angulos)
+  Total    : 34590
+-----------------------------
+
+
+=== Entrenamiento 0 a 5.0 segundos (semilla 1) ===
+--- Iniciando Optimizacion con Adam ---
+Epoca    0 | Perdida Total: 9.3078e+00 | lambda_ic: 10.00
+Epoca  500 | Perdida Total: 3.3541e-02 | lambda_ic: 10.00
+Epoca 1000 | Perdida Total: 3.1584e-02 | lambda_ic: 198.73
+Epoca 1500 | Perdida Total: 3.0992e-02 | lambda_ic: 199.99
+Epoca 2000 | Perdida Total: 3.0626e-02 | lambda_ic: 200.00
+Epoca 2500 | Perdida Total: 3.0396e-02 | lambda_ic: 200.00
+--- Cambiando a L-BFGS con lambda_ic congelado en: 199.97 ---
+L-BFGS Iter    0 | Perdida Total: 7.8252e-02
+L-BFGS Iter  100 | Perdida Total: 6.0215e-02
+L-BFGS Iter  200 | Perdida Total: 5.9872e-02
+L-BFGS Iter  300 | Perdida Total: 5.9849e-02
+L-BFGS Iter  400 | Perdida Total: 5.9809e-02
+L-BFGS Iter  500 | Perdida Total: 5.9723e-02
+L-BFGS Iter  600 | Perdida Total: 5.9511e-02
+L-BFGS Iter  700 | Perdida Total: 5.7858e-02
+L-BFGS Iter  800 | Perdida Total: 5.3819e-02
+L-BFGS Iter  900 | Perdida Total: 5.0546e-02
+L-BFGS Iter 1000 | Perdida Total: 4.7424e-02
+L-BFGS Iter 1100 | Perdida Total: 4.1658e-02
+L-BFGS Iter 1200 | Perdida Total: 3.6251e-02
+L-BFGS Iter 1300 | Perdida Total: 3.4255e-02
+L-BFGS Iter 1400 | Perdida Total: 3.3422e-02
+L-BFGS Iter 1500 | Perdida Total: 3.1874e-02
+L-BFGS Iter 1600 | Perdida Total: 2.5475e-02
+L-BFGS Iter 1700 | Perdida Total: 1.6695e-02
+L-BFGS Iter 1800 | Perdida Total: 1.2955e-02
+L-BFGS Iter 1900 | Perdida Total: 9.9246e-03
+L-BFGS Iter 2000 | Perdida Total: 7.1133e-03
+L-BFGS Iter 2100 | Perdida Total: 4.5781e-03
+L-BFGS Iter 2200 | Perdida Total: 2.6440e-03
+L-BFGS Iter 2300 | Perdida Total: 1.4016e-03
+L-BFGS Iter 2400 | Perdida Total: 8.6662e-04
+L-BFGS Iter 2500 | Perdida Total: 5.1715e-04
+L-BFGS Iter 2600 | Perdida Total: 3.1213e-04
+L-BFGS Iter 2700 | Perdida Total: 2.0516e-04
+L-BFGS Iter 2800 | Perdida Total: 1.3316e-04
+L-BFGS Iter 2900 | Perdida Total: 8.0461e-05
+L-BFGS Iter 3000 | Perdida Total: 6.1181e-05
+L-BFGS Iter 3100 | Perdida Total: 6.1181e-05
+L-BFGS Iter 3200 | Perdida Total: 6.1181e-05
+L-BFGS Iter 3300 | Perdida Total: 6.1181e-05
+L-BFGS Iter 3400 | Perdida Total: 6.1181e-05
+L-BFGS Iter 3500 | Perdida Total: 6.1181e-05
+L-BFGS Iter 3600 | Perdida Total: 6.1181e-05
+L-BFGS Iter 3700 | Perdida Total: 6.1181e-05
+L-BFGS Iter 3800 | Perdida Total: 6.1181e-05
+--- Fin del Entrenamiento ---
+Tiempo total: 2646.28 segundos (44.10 minutos)
+Progreso guardado: pesos estables hasta t=5s en pesos_qpinn_semilla1_t5.pth
+
+=== Entrenamiento 0 a 10.0 segundos (semilla 1) ===
+--- Iniciando Optimizacion con Adam ---
+Epoca    0 | Perdida Total: 2.1643e-02 | lambda_ic: 10.00
+Epoca  500 | Perdida Total: 2.0578e-02 | lambda_ic: 10.00
+Epoca 1000 | Perdida Total: 2.0221e-02 | lambda_ic: 198.75
+Epoca 1500 | Perdida Total: 2.0222e-02 | lambda_ic: 199.99
+Epoca 2000 | Perdida Total: 2.0222e-02 | lambda_ic: 200.00
+Epoca 2500 | Perdida Total: 2.0222e-02 | lambda_ic: 200.00
+Epoca 3000 | Perdida Total: 2.0222e-02 | lambda_ic: 200.00
+Epoca 3500 | Perdida Total: 2.0222e-02 | lambda_ic: 200.00
+--- Cambiando a L-BFGS con lambda_ic congelado en: 200.00 ---
+L-BFGS Iter    0 | Perdida Total: 5.5113e+01
+L-BFGS Iter  100 | Perdida Total: 2.6582e-02
+L-BFGS Iter  200 | Perdida Total: 1.6638e-02
+L-BFGS Iter  300 | Perdida Total: 1.3956e-02
+L-BFGS Iter  400 | Perdida Total: 1.1128e-02
+L-BFGS Iter  500 | Perdida Total: 9.4006e-03
+L-BFGS Iter  600 | Perdida Total: 8.2226e-03
+L-BFGS Iter  700 | Perdida Total: 7.2864e-03
+L-BFGS Iter  800 | Perdida Total: 6.6532e-03
+L-BFGS Iter  900 | Perdida Total: 5.9764e-03
+L-BFGS Iter 1000 | Perdida Total: 5.3667e-03
+L-BFGS Iter 1100 | Perdida Total: 4.9287e-03
+L-BFGS Iter 1200 | Perdida Total: 4.5721e-03
+L-BFGS Iter 1300 | Perdida Total: 4.2386e-03
+L-BFGS Iter 1400 | Perdida Total: 4.0470e-03
+L-BFGS Iter 1500 | Perdida Total: 3.9173e-03
+L-BFGS Iter 1600 | Perdida Total: 3.8229e-03
+L-BFGS Iter 1700 | Perdida Total: 3.7341e-03
+L-BFGS Iter 1800 | Perdida Total: 3.6212e-03
+L-BFGS Iter 1900 | Perdida Total: 3.4502e-03
+L-BFGS Iter 2000 | Perdida Total: 3.3016e-03
+L-BFGS Iter 2100 | Perdida Total: 3.1518e-03
+L-BFGS Iter 2200 | Perdida Total: 3.0320e-03
+L-BFGS Iter 2300 | Perdida Total: 2.9122e-03
+L-BFGS Iter 2400 | Perdida Total: 2.7715e-03
+L-BFGS Iter 2500 | Perdida Total: 2.5456e-03
+L-BFGS Iter 2600 | Perdida Total: 2.3086e-03
+L-BFGS Iter 2700 | Perdida Total: 2.0201e-03
+L-BFGS Iter 2800 | Perdida Total: 1.7535e-03
+L-BFGS Iter 2900 | Perdida Total: 1.5481e-03
+L-BFGS Iter 3000 | Perdida Total: 1.4047e-03
+L-BFGS Iter 3100 | Perdida Total: 1.2324e-03
+L-BFGS Iter 3200 | Perdida Total: 1.1089e-03
+L-BFGS Iter 3300 | Perdida Total: 9.7955e-04
+L-BFGS Iter 3400 | Perdida Total: 8.5352e-04
+L-BFGS Iter 3500 | Perdida Total: 7.6149e-04
+L-BFGS Iter 3600 | Perdida Total: 6.7353e-04
+L-BFGS Iter 3700 | Perdida Total: 5.9830e-04
+L-BFGS Iter 3800 | Perdida Total: 5.1476e-04
+L-BFGS Iter 3900 | Perdida Total: 4.5153e-04
+L-BFGS Iter 4000 | Perdida Total: 4.0172e-04
+L-BFGS Iter 4100 | Perdida Total: 3.6059e-04
+L-BFGS Iter 4200 | Perdida Total: 3.1822e-04
+L-BFGS Iter 4300 | Perdida Total: 2.7936e-04
+L-BFGS Iter 4400 | Perdida Total: 2.4558e-04
+L-BFGS Iter 4500 | Perdida Total: 2.1580e-04
+L-BFGS Iter 4600 | Perdida Total: 1.8809e-04
+L-BFGS Iter 4700 | Perdida Total: 1.6612e-04
+L-BFGS Iter 4800 | Perdida Total: 1.4593e-04
+L-BFGS Iter 4900 | Perdida Total: 1.2426e-04
+L-BFGS Iter 5000 | Perdida Total: 1.1660e-04
+L-BFGS Iter 5100 | Perdida Total: 1.1660e-04
+L-BFGS Iter 5200 | Perdida Total: 1.1660e-04
+L-BFGS Iter 5300 | Perdida Total: 1.1660e-04
+L-BFGS Iter 5400 | Perdida Total: 1.1660e-04
+L-BFGS Iter 5500 | Perdida Total: 1.1660e-04
+L-BFGS Iter 5600 | Perdida Total: 1.1660e-04
+L-BFGS Iter 5700 | Perdida Total: 1.1660e-04
+--- Fin del Entrenamiento ---
+Tiempo total: 5316.30 segundos (88.60 minutos)
+Progreso guardado: pesos estables hasta t=10s en pesos_qpinn_semilla1_t10.pth
+
+=== Entrenamiento 0 a 15.0 segundos (semilla 1) ===
+--- Iniciando Optimizacion con Adam ---
+Epoca    0 | Perdida Total: 1.0771e-02 | lambda_ic: 10.00
+Epoca  500 | Perdida Total: 1.0040e-02 | lambda_ic: 10.00
+Epoca 1000 | Perdida Total: 1.0108e-02 | lambda_ic: 198.75
+Epoca 1500 | Perdida Total: 1.0334e-02 | lambda_ic: 199.99
+Epoca 2000 | Perdida Total: 1.0339e-02 | lambda_ic: 200.00
+Epoca 2500 | Perdida Total: 1.0341e-02 | lambda_ic: 200.00
+Epoca 3000 | Perdida Total: 1.0343e-02 | lambda_ic: 200.00
+Epoca 3500 | Perdida Total: 1.0345e-02 | lambda_ic: 200.00
+Epoca 4000 | Perdida Total: 1.0347e-02 | lambda_ic: 200.00
+Epoca 4500 | Perdida Total: 1.0350e-02 | lambda_ic: 200.00
+Epoca 5000 | Perdida Total: 1.0353e-02 | lambda_ic: 200.00
+Epoca 5500 | Perdida Total: 1.0356e-02 | lambda_ic: 200.00
+Epoca 6000 | Perdida Total: 1.0359e-02 | lambda_ic: 200.00
+Epoca 6500 | Perdida Total: 1.0362e-02 | lambda_ic: 200.00
+--- Cambiando a L-BFGS con lambda_ic congelado en: 200.00 ---
+L-BFGS Iter    0 | Perdida Total: 2.4415e+02
+L-BFGS Iter  100 | Perdida Total: 1.5698e-01
+L-BFGS Iter  200 | Perdida Total: 4.5716e-02
+L-BFGS Iter  300 | Perdida Total: 2.0256e-02
+L-BFGS Iter  400 | Perdida Total: 1.2062e-02
+L-BFGS Iter  500 | Perdida Total: 9.8318e-03
+L-BFGS Iter  600 | Perdida Total: 8.0657e-03
+L-BFGS Iter  700 | Perdida Total: 6.6067e-03
+L-BFGS Iter  800 | Perdida Total: 5.2543e-03
+L-BFGS Iter  900 | Perdida Total: 4.3974e-03
+L-BFGS Iter 1000 | Perdida Total: 3.8598e-03
+L-BFGS Iter 1100 | Perdida Total: 3.4156e-03
+L-BFGS Iter 1200 | Perdida Total: 3.0874e-03
+L-BFGS Iter 1300 | Perdida Total: 2.8729e-03
+L-BFGS Iter 1400 | Perdida Total: 2.6026e-03
+L-BFGS Iter 1500 | Perdida Total: 2.3945e-03
+L-BFGS Iter 1600 | Perdida Total: 2.2132e-03
+L-BFGS Iter 1700 | Perdida Total: 2.0313e-03
+L-BFGS Iter 1800 | Perdida Total: 1.8546e-03
+L-BFGS Iter 1900 | Perdida Total: 1.7078e-03
+L-BFGS Iter 2000 | Perdida Total: 1.5930e-03
+L-BFGS Iter 2100 | Perdida Total: 1.5074e-03
+L-BFGS Iter 2200 | Perdida Total: 1.4341e-03
+L-BFGS Iter 2300 | Perdida Total: 1.3669e-03
+L-BFGS Iter 2400 | Perdida Total: 1.3073e-03
+L-BFGS Iter 2500 | Perdida Total: 1.2549e-03
+L-BFGS Iter 2600 | Perdida Total: 1.1915e-03
+L-BFGS Iter 2700 | Perdida Total: 1.1287e-03
+L-BFGS Iter 2800 | Perdida Total: 1.0792e-03
+L-BFGS Iter 2900 | Perdida Total: 1.0293e-03
+L-BFGS Iter 3000 | Perdida Total: 9.7870e-04
+L-BFGS Iter 3100 | Perdida Total: 9.2502e-04
+L-BFGS Iter 3200 | Perdida Total: 8.7953e-04
+L-BFGS Iter 3300 | Perdida Total: 8.3656e-04
+L-BFGS Iter 3400 | Perdida Total: 7.9842e-04
+L-BFGS Iter 3500 | Perdida Total: 7.4820e-04
+L-BFGS Iter 3600 | Perdida Total: 7.1236e-04
+L-BFGS Iter 3700 | Perdida Total: 6.7922e-04
+L-BFGS Iter 3800 | Perdida Total: 6.5245e-04
+L-BFGS Iter 3900 | Perdida Total: 6.2733e-04
+L-BFGS Iter 4000 | Perdida Total: 6.2159e-04
+L-BFGS Iter 4100 | Perdida Total: 6.2159e-04
+L-BFGS Iter 4200 | Perdida Total: 6.2159e-04
+L-BFGS Iter 4300 | Perdida Total: 6.2159e-04
+L-BFGS Iter 4400 | Perdida Total: 6.2159e-04
+L-BFGS Iter 4500 | Perdida Total: 6.2159e-04
+L-BFGS Iter 4600 | Perdida Total: 6.2159e-04
+L-BFGS Iter 4700 | Perdida Total: 6.2159e-04
+--- Fin del Entrenamiento ---
+Tiempo total: 12451.01 segundos (207.52 minutos)
+Progreso guardado: pesos estables hasta t=15s en pesos_qpinn_semilla1_t15.pth
+Semilla fijada en SEED = 1
+
+======================================================================
+COMPARATIVA REAL vs Q-PINN HIBRIDA | HORIZONTE: 0 a 5 SEGUNDOS
+======================================================================
+Checkpoint de t=5s cargado con exito.
+
+......................... METRICAS DE ERROR .........................
+--- Movimiento Translacional (z) ---
+  MSE (Error Cuadratico Medio): 3.068345e-07
+  MAE (Error Absoluto Medio):   4.762455e-04
+  Error Relativo (Norma L2):    0.8444 %
+
+--- Movimiento Torsional (theta) ---
+  MSE (Error Cuadratico Medio): 2.097980e-04
+  MAE (Error Absoluto Medio):   1.119088e-02
+  Error Relativo (Norma L2):    0.9657 %
+
+
+======================================================================
+COMPARATIVA REAL vs Q-PINN HIBRIDA | HORIZONTE: 0 a 10 SEGUNDOS
+======================================================================
+Checkpoint de t=10s cargado con exito.
+
+......................... METRICAS DE ERROR .........................
+--- Movimiento Translacional (z) ---
+  MSE (Error Cuadratico Medio): 1.845516e-05
+  MAE (Error Absoluto Medio):   3.580141e-03
+  Error Relativo (Norma L2):    7.6107 %
+
+--- Movimiento Torsional (theta) ---
+  MSE (Error Cuadratico Medio): 2.097196e-02
+  MAE (Error Absoluto Medio):   1.013079e-01
+  Error Relativo (Norma L2):    5.8188 %
+
+
+======================================================================
+COMPARATIVA REAL vs Q-PINN HIBRIDA | HORIZONTE: 0 a 15 SEGUNDOS
+======================================================================
+Checkpoint de t=15s cargado con exito.
+
+......................... METRICAS DE ERROR .........................
+--- Movimiento Translacional (z) ---
+  MSE (Error Cuadratico Medio): 3.053411e-04
+  MAE (Error Absoluto Medio):   1.468832e-02
+  Error Relativo (Norma L2):    37.4790 %
+
+--- Movimiento Torsional (theta) ---
+  MSE (Error Cuadratico Medio): 8.276183e-01
+  MAE (Error Absoluto Medio):   6.502183e-01
+  Error Relativo (Norma L2):    28.8653 %
+
+
+Metricas guardadas en /Users/sebastianqa/dev/wilberforce-pinn-qpinn/results/metrics/qpinn_metricas_semilla1.json
