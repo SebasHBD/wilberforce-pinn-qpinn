@@ -338,3 +338,8 @@ el desarrollo de este trabajo.
 ## Licencia
 
 Distribuido bajo licencia MIT. Ver [`LICENSE`](LICENSE).
+
+## Cita
+Quiñones Arredondo, S. (2026). *Simulación del péndulo de Wilberforce con
+PINNs y Q-PINNs* (v1.0-tfm) [Software]. Zenodo.
+https://doi.org/10.5281/zenodo.22663270
