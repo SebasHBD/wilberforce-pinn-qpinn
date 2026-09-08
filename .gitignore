@@ -21,3 +21,4 @@ results/**/*.log
 !**/.gitkeep
 .wilberforce/
 notebooks/
+notebooks/
