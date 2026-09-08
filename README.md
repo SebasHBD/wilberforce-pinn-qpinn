@@ -329,6 +329,12 @@ sostener afirmaciones estadísticas sólidas sobre la diferencia entre modelos.
 
 ---
 
+## Agradecimientos
+
+Al profesor Dagoberto Mayorca Torres, por la revisión y las correcciones del
+documento, y al profesor Paulo César Cárdenas Montoya, por sus orientaciones durante
+el desarrollo de este trabajo.
+
 ## Licencia
 
 Distribuido bajo licencia MIT. Ver [`LICENSE`](LICENSE).
