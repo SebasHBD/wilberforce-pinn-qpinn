@@ -11,7 +11,7 @@ tradicionales, PINNs y Q-PINNs_**.
 
 Máster Universitario en Ingeniería Matemática y Computación
 Universidad Internacional de La Rioja (UNIR), septiembre de 2026
-Autor: Sebastián Quiñones Arredondo ·
+Autor: Sebastián Quiñones Arredondo
 
 ---
 
@@ -151,9 +151,9 @@ $$m\ddot{z} + kz + \tfrac{1}{2}\epsilon\theta = 0, \qquad I\ddot{\theta} + \delt
 Adimensionalizando con `τ = ω_z · t`, donde `ω_z = √(k/m)`, y normalizando las
 salidas con `z = z₀u`, `θ = θ₀v`:
 
-$$u'' + u + A\,v = 0$$
+$$u'' + u + A v = 0$$
 
-$$v'' + K\,v + B\,u = 0$$
+$$v'' + K v + B u = 0$$
 
 Parámetros físicos, tomados de Berg & Marshall (1991):
 
